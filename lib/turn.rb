@@ -10,3 +10,15 @@ end
 def  input_to_index(input)
   index = input.to_i - 1
 end
+
+def valid_move?(index)
+  if index < 8
+    if board[index] == "" || board[index] == " " || board[index] == nil
+      return true
+    else
+      return false
+    end
+  else
+    return false
+  end
+end
