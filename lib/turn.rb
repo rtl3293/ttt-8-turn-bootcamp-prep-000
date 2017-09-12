@@ -14,11 +14,11 @@ end
 def valid_move?(board, index)
   if index < 9
     if board[index] == "" || board[index] == " " || board[index] == nil
-      return true
-    else
       return false
+    else
+      return true
     end
   else
-    return false
+    return true
   end
 end
