@@ -26,3 +26,14 @@ end
 def move(board, index, player)
   board[index] = player
 end
+
+def turn(board)
+  player_move = false
+  while player_move == false
+    puts "Please enter 1-9:"
+    user_input = gets.strip
+    index = input_to_index(user_input)
+    player_move = valid_move?(index)
+  end
+  move(board, index, player)
+end
