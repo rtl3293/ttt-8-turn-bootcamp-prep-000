@@ -37,3 +37,5 @@ def turn(board)
   end
   move(board, index, player)
 end
+
+turn([" ", " ", " ", " ", " ", " ", " ", " ", " "])
