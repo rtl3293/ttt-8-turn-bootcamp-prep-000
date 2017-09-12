@@ -35,7 +35,7 @@ def turn(board)
     index = input_to_index(user_input)
     player_move = valid_move?(board, index)
   end
-  move(board, index, player)
+  move(board, index, "X")
 end
 
 turn([" ", " ", " ", " ", " ", " ", " ", " ", " "])
